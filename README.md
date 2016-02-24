@@ -44,6 +44,17 @@ dockerServerUrl=unix:///var/run/docker.sock
 ## Building docker image
 ```./gradlew clean build dockerBuildImage```
 
+## gradle.properties
+Please create/update your's ```gradle.properties``` file to include docker's IP address. E.g. <br/>
+For Mac Users:
+```
+dockerServerUrl=https://<REPLACE_WITH_DOCKER_MACHINE_IP_ADDRESS>:2376/
+```
+For Linux Users:
+```
+dockerServerUrl=unix:///var/run/docker.sock
+```
+
 ## REST documentation
 You can visit [swagger-ui](http://ec2-52-36-37-125.us-west-2.compute.amazonaws.com:8888/swagger-ui/)
 
